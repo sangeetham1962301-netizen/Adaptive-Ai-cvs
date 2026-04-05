@@ -1,0 +1,72 @@
+import csv
+data=[
+["question","answer","tag"],
+["What courses are offered?","BSc CS, BCA, BCom, Biochemistry, Bio Maths, BBA","courses"],
+["What courses are available?","BSc CS, BCA, BCom, Biochemistry, Bio Maths, BBA","courses"],
+["Which courses does the college offer?","BSc CS, BCA, BCom, Biochemistry, Bio Maths, BBA","courses"],
+["List the courses in your college","BSc CS, BCA, BCom, Biochemistry, Bio Maths, BBA","courses"],
+["What is the admission process?","Admission is based on 12th marks","admission"],
+["How can I join the college?","Admission is based on 12th marks","admission"],
+["What is the procedure for admission?","Admission is based on 12th marks","admission"],
+["How do I apply for admission?","Admission is based on 12th marks","admission"],
+
+["What is the fee structure?","BSc CS and BCA fees are 17500 per semester","fees"],
+["How much is the college fee?","BSc CS and BCA fees are 17500 per semester","fees"],
+["Tell me the fee details","BSc CS and BCA fees are 17500 per semester","fees"],
+["What is the semester fee?","BSc CS and BCA fees are 17500 per semester","fees"],
+
+["What facilities are available?","Library, sports, hostel, and cafeteria are available","facilities"],
+["What facilities are provided?","Library, sports, hostel, and cafeteria are available","facilities"],
+["Tell me about campus facilities","Library, sports, hostel, and cafeteria are available","facilities"],
+
+["Where is the college located?","The college is located in Thirukazhukundram Chengalpattu District Tamil Nadu India","location"],
+["College address?","The college is located in Thirukazhukundram Chengalpattu District Tamil Nadu India","location"],
+["How to reach the college?","The college is located in Thirukazhukundram Chengalpattu District Tamil Nadu India","location"],
+
+["What extracurricular activities are available?","Sports cultural events and clubs are available","activities"],
+["Do you have student activities?","Sports cultural events and clubs are available","activities"],
+["Any cultural programs in college?","Sports cultural events and clubs are available","activities"],
+
+["How can I contact the college?","You can contact via phone 6380544088 or email office@atasctkm.com","contact"],
+["College phone number?","You can contact via phone 6380544088 or email office@atasctkm.com","contact"],
+["College email address?","You can contact via phone 6380544088 or email office@atasctkm.com","contact"],
+
+["What is the vision of the college?","To provide quality education and develop responsible citizens","vision"],
+["College mission and vision?","To provide quality education and develop responsible citizens","vision"],
+
+["What are career opportunities after graduation?","Students can work in IT finance management and education","placement"],
+["What jobs can I get after graduation?","Students can work in IT finance management and education","placement"],
+["Placement opportunities available?","Students can work in IT finance management and education","placement"],
+
+["What is the student faculty ratio?","The student faculty ratio is 20 to 1","general"]
+,
+["What is the academic calendar?","Classes are from Monday to Saturday 9 AM to 2 PM","academic"],
+["What are college timings?","Classes are from Monday to Saturday 9 AM to 2 PM","academic"],
+["Daily schedule of college?","Classes are from Monday to Saturday 9 AM to 2 PM","academic"],
+
+["What are admission requirements?","Candidates must pass 12th standard with required subjects","admission"],
+["Eligibility for admission?","Candidates must pass 12th standard with required subjects","admission"],
+
+["Is transport available?","Yes bus facilities are available","transport"],
+["Do you provide bus service?","Yes bus facilities are available","transport"],
+["College transport details?","Yes bus facilities are available","transport"],
+
+["What are bus fees?","Bus fees vary based on route from 4000 to 25000","transport"],
+["Bus routes and charges?","Bus fees vary based on route from 4000 to 25000","transport"]
+,
+["Are scholarships available?","Yes government and merit scholarships are available","scholarship"],
+["Any scholarship support?","Yes government and merit scholarships are available","scholarship"]
+,
+["Are laboratory facilities available?","Yes labs for computer science chemistry physics and biochemistry are available","facilities"],
+["Do you have labs?","Yes labs for computer science chemistry physics and biochemistry are available","facilities"]
+,
+["Are sports facilities available?","Yes playground and indoor sports are available","sports"],
+["Do you have sports activities?","Yes playground and indoor sports are available","sports"]
+,
+["Do you provide placements?","Yes placement cell provides job opportunities","placement"],
+["Campus placement details?","Yes placement cell provides job opportunities","placement"]
+]
+with open("college_faqnew.csv","w",newline="", encoding="utf-8") as f:
+    writer=csv.writer(f)
+    writer.writerows(data)
+    print("csv file created successfully.")
